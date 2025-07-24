@@ -117,11 +117,19 @@
     border:none;
     padding:15px;
     width:100%;
+    cursor: pointer;
+    transition: 5s;
 }  
+.content3_2 button:hover{
+    background-color:rgba(0, 128, 0, 0.26);
+  
+}  
+
+
 /* Flower & Plants section */
  .container4{
     max-width:1140px;
-    margin:30px auto;
+    margin:20px auto;
     display: flex;
     justify-content: space-between;
     gap:100px;
@@ -141,6 +149,7 @@
     position:absolute;
     top:-80px;
     right:-80px;
+    transition:transform 3s;
 
 }
 .content4_1_2:hover{
@@ -149,6 +158,8 @@
     position:absolute;
     top:-80px;
     right:-80px;
+    cursor: pointer;
+    transform:rotate(360deg);
 }
 .content4_2{
     width:calc(100%-50px);
@@ -192,7 +203,7 @@
     grid-template-rows: auto auto;
     gap:10px;
    position:relative;
-   margin-top:50px;
+   margin-top:10px;
     
 }
 
@@ -250,6 +261,84 @@ background-image:linear-gradient(#070211, #07021100), url(../assets/deal-ana.png
     font-size:2rem;
     color:white;
 }
+
+/* Join Bunch Section */
+.container6{
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    text-align: center;
+    padding-top:150px;
+    margin:30px auto;
+}
+.container6 h2{
+    color:white;
+    font-size: 4rem;
+}
+.container6 input{
+    padding:10px 15px;
+    width:650px;
+}
+.container6 button{
+    width:190px;
+    padding:11px;
+    margin-left:-20px;
+    border:none;
+    background-color:rgba(233, 90, 8, 1) ;
+    color:white;
+    transition: 3s;
+}
+
+.container6 button:hover{
+    width:150px;
+    cursor: pointer;
+    margin-left:0px;
+    border:none;
+    background-color:#2bca6036 ;
+}
+/* Footer Section */
+.container7{
+
+    max-width:1140px;
+    margin:70px auto; 
+    display:flex;
+    gap:150px;
+}
+.container7 p{
+    font-size:1.4rem;
+    width:300px;
+}
+.content7_1{
+    display:flex;
+}
+.content7_1 ul li{
+    list-style: none;
+    line-height: 50px;
+}
+.content7_1 a{
+    text-decoration: none;
+    color:black;
+}
+.content7_1_1 {
+    display:grid;
+   grid-template-columns: 1fr 1fr;
+    gap:20px;
+   align-items: center;
+}
+.content7_1_1{
+    text-align: left;
+}
+.content7_2 img{
+    margin-left:20px;
+    
+}
+
+
+
+
+
 
 
 
@@ -352,7 +441,8 @@ background-image:linear-gradient(#070211, #07021100), url(../assets/deal-ana.png
 
 /* Latest deals section */
 .container5{
-    padding:10px;
+  
+    margin: 30px;
 }
 .content5_1 h3{
     font-size:2.2rem;
@@ -382,11 +472,243 @@ background-image:linear-gradient(#070211, #07021100), url(../assets/deal-ana.png
     height: 200px;
 }
 
+/* Join Bunch Section */
+.container6{
+    height: 430px;
+    margin:70px auto;
+}
+.container6 h2{
+    color:white;
+    font-size: 1.8rem;
+    margin-bottom:20px;
+}
+.container6 input{
+    padding:10px 15px;
+    width:250px;
+}
+.container6 button{
+    width:100px;
+    padding:11px;
+    margin-left:-20px;
+    border:none;
+    background-color:rgba(233, 90, 8, 1) ;
+}
+/* Footer Section */
+.container7{
+   flex-direction:column;
+   justify-content: start;
+    gap:30px;
+    padding:15px;
+}
+.container7 p{
+    font-size:1.4rem;
+    
+}
+.content7_1 ul li{
+    list-style: none;
 
+}
+.content7_1 a{
+    text-decoration: none;
+    color:black;
+}
+.content7_1 {
+    display:flex;
+   flex-direction: column;
+   gap:20px;
+  text-align: left;
+  justify-content: start;
+}
+.content7_2 img{
+    margin-left:20px;
+    
+}
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width:1290px) {
+     /* navbar section */
+ .content2 ul li a{
+    text-decoration: none;
+    color:black;
+    font-size:1rem;
+ }
+    .content2 ul{
+        gap: 5px;
+        justify-content: end;
+    }
+    .content1 img{
+        width: 80%;
+    
+    }
+
+    
+    .content2 ul li:nth-child(1) a,
+    .content2 ul li:nth-child(2) a,
+    .content2 ul li:nth-child(3) a{
+    visibility: hidden;
+    font-size:.5rem;
+    }
+    .content2 ul li:nth-child(4) a{
+        word-spacing: 0px;
+        font-weight: normal;
+        padding-right:10px;
+        font-size: 1rem;
+    }
+ /* Banner Section */ 
+     .container2 {
+        flex-direction: column-reverse;
+        gap:25px;
+        padding: 0 10px;
+    }
+    .content2_1{
+       
+    }
+    .content2_1 h2{
+        font-size: 2.2rem;
+        line-height: 40px;
+        margin-bottom:20px;
+    }
+    .content2_2 img{
+        max-width:100%;
+    } 
+
+    /* Our Plants Section */
+     .container3{
+        
+        text-align: center;
+    }
+.container3_1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+    align-items: center;
+}
+.content3_1 h2{
+   font-size: 2.2rem;
+}
+
+/* Card Section */
+
+ .content3_2 img{
+    max-width:100%;
+ } 
+
+
+/* Flower & Plants Lover */
+  .container4{
+    flex-direction: column;
+    gap:30px;
+}
+.content4_2{
+    text-align: left;
+    margin:20px;
+    padding:0px 30px;
+   
+}
+.content4_2 h3{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+.content4_2 ul{
+    font-size:1.2rem;
+}
+.content4_1_2{
+    display:none;
 } 
+.content4_1_1{
+    width:99%;
+    padding:0 10px;
+}
 
+/* Latest deals section */
+.container5{
+  
+    margin: 30px;
+}
+.content5_1 h3{
+    font-size:2.2rem;
+}
 
+.content5_2{
+    grid-template-columns: 1fr;
+   margin-top:50px;
+}
+.part2 h3{
+    font-size:1.5rem;
+}
+.part2 a{
+    font-size:1rem;
+    color:white;
+}
+.part1{
+    width:100%;
+    height:200px;
+}
+.part2{
+    width:100%;
+    height: 200px;
+    padding:70px 0px;
+}
+.part3{
+    height: 200px;
+}
 
+/* Join Bunch Section */
+.container6{
+    height: 430px;
+    margin:70px auto;
+}
+.container6 h2{
+    color:white;
+    font-size: 1.8rem;
+    margin-bottom:20px;
+}
+.container6 input{
+    padding:10px 15px;
+    width:250px;
+}
+.container6 button{
+    width:100px;
+    padding:11px;
+    margin-left:-20px;
+    border:none;
+    background-color:rgba(233, 90, 8, 1) ;
+}
+/* Footer Section */
+.container7{
+   flex-direction:column;
+   justify-content: start;
+    gap:30px;
+    padding:15px;
+}
+.container7 p{
+    font-size:1.4rem;
+    
+}
+.content7_1 ul li{
+    list-style: none;
+
+}
+.content7_1 a{
+    text-decoration: none;
+    color:black;
+}
+.content7_1 {
+    display:flex;
+   flex-direction: column;
+   gap:20px;
+  text-align: left;
+  justify-content: start;
+}
+.content7_2 img{
+    margin-left:20px;
+    
+}
+
+}
+    
 
 
 
