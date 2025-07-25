@@ -226,7 +226,7 @@
     border-radius: 10px;
     text-align: center;
     padding: 70px 0px;
-   
+   background-position: center;
 }
 .part2{
 
@@ -240,6 +240,7 @@ background-image:linear-gradient(#070211, #07021100), url(../assets/deal-zabo.pn
     border-radius: 10px;
     text-align: center;
     padding: 170px 0px;
+    background-position: center;
 }
 
 .part3{
@@ -253,6 +254,7 @@ background-image:linear-gradient(#070211, #07021100), url(../assets/deal-ana.png
     border-radius: 10px;
     text-align: center;
     padding: 70px 0px;
+    background-position:center;
 }
 .part1 h3,
 .part3 h3{
